@@ -1,0 +1,66 @@
+@import "variables";
+@import "responsive-styles/mobile-styles";
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background-color: darkmagenta;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  .logo-div {
+    .logo {
+      display: inline-block;
+      font-family: "Grechen Fuemen", cursive;
+      font-size: 32px;
+      text-decoration: none;
+      color: inherit;
+      //   text-shadow: 1px 1px 3px blue;
+      &:active {
+        transform: scale(1.05);
+      }
+    }
+  }
+  .navbar-title-div {
+      opacity: 0.5;
+    .navbar-title {
+      letter-spacing: 2px;
+      font-size: 16px;
+    }
+  }
+  .write-an-alert {
+    button {
+      border: 1px solid transparent;
+      padding: 5px 10px;
+      font-family: "Poppins", sans-serif;
+      color: white;
+      letter-spacing: 2px;
+      font-size: 16px;
+      font-weight: 500;
+      background-color: inherit;
+      &:hover {
+        border: 1px solid white;
+        cursor: pointer;
+      }
+      &:active {
+        transform: scale(0.9);
+        border: 1px solid white;
+      }
+    }
+  }
+}
+.icon-container {
+  display: none;
+}
+@include mobile;

@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 20px;
+  background-color: darkmagenta;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.navbar .logo-div .logo {
+  display: inline-block;
+  font-family: "Grechen Fuemen", cursive;
+  font-size: 32px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar .logo-div .logo:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.navbar .navbar-title-div {
+  opacity: 0.5;
+}
+
+.navbar .navbar-title-div .navbar-title {
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.navbar .write-an-alert button {
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: inherit;
+}
+
+.navbar .write-an-alert button:hover {
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.navbar .write-an-alert button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  border: 1px solid white;
+}
+
+.icon-container {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    height: 50px;
+    padding: 5px 10px;
+  }
+  .navbar .logo-div .logo {
+    font-size: 20px;
+  }
+  .navbar .navbar-title-div {
+    display: none;
+  }
+  .navbar .write-an-alert {
+    display: none;
+  }
+  .icon-container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    top: 40px;
+    padding: 5px 10px;
+    background-color: darkmagenta;
+  }
+  .icon-container button {
+    padding: 5px 10px;
+    background-color: darkmagenta;
+    border: 1px solid transparent;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+  }
+  .icon-container button:active {
+    background-color: #ad00ad;
+  }
+  .icon-container button .icon {
+    color: white;
+  }
+  .icon-container .write-an-alert-mobile {
+    display: block;
+  }
+  .icon-container .write-an-alert-mobile button {
+    border: 1px solid transparent;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    background-color: inherit;
+  }
+  .icon-container .write-an-alert-mobile button:hover {
+    border: unset;
+    cursor: unset;
+  }
+  .icon-container .write-an-alert-mobile button:active {
+    -webkit-transform: unset;
+            transform: unset;
+    border: unset;
+    background-color: #ad00ad;
+  }
+}
+/*# sourceMappingURL=style.css.map */
